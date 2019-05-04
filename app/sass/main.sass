@@ -1,0 +1,63 @@
+@import "libs"
+@import "base"
+
+
+.header
+	position: fixed
+	right: 0
+	left: 0
+	background-color: $bg
+	padding: 20px 25px
+	transition: all .3s
+	z-index: 1001
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	// &--active, &--menu
+	// 	background-color: rgba(0, 0, 0, .8)
+	// 	padding: 5px 0
+
+.main
+	padding: 400px 0
+	
+.nav
+
+	&--installation
+		ul
+			display: flex
+			justify-content: space-between
+
+		li
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+
+		a
+			position: relative
+			display: block
+			width: 40px
+			height: 40px
+			border-radius: 5px
+			border: 3px solid #ffffff
+			background-color: #9247c3
+			transition: all .6s
+
+			&:hover,
+			&:focus
+				background: $accent
+
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+
+
+
+.footer
+	height: 1000px
+
+
+@import "page"
+@import "media" // Always at the end
