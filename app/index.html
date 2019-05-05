@@ -3,67 +3,316 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Game</title>
+	<title>ОНЛАЙН-ТРЕНАЖЁРЫ И ОЛИМПИАДЫ AKIRA EDUCATION</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" href="img/favicon.ico">
 	<meta name="theme-color" content="#000">
-	
-	<link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/main.min.css?v=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
 </head>
 
 <body>
 
+    <script type="text/javascript">
+      (function(){ 
+        document.onreadystatechange = () => {
+          if (document.readyState === 'complete') {
+            let el = document.querySelector('#лого');
+            let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":12.6,"strokeOpacity":1,"strokeColor":"#4cddee","strokeCap":"square"}); 
+            myAnimation.paint(); 
+          }
+        }
+      })();
+    </script>
+
+	<div class="preloader">
+		<svg id="лого" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720.84 436.62" data-llp-composed="true" class="lazy-line-painter"><defs><style>.cls-1{fill:#4cddee;}</style></defs><title>лого</title><path class="cls-1" d="M103.92,436.62H-.61L161.13,49.32h95.18l161.74,387.3H311.87L279.41,355.2h-143Zm104-263.52L167.73,276h80.32Z" transform="translate(0.61)" data-llp-id="лого-0" data-llp-duration="500" data-llp-delay="0" fill-opacity="0" style=""/><path class="cls-1" d="M531.93,436.62h-99V51.52h99V198.41L656.81,51.52H775.64L626.55,228.67l176.6,208H682.67L531.93,265.53Z" transform="translate(0.61)" data-llp-id="лого-1" data-llp-duration="500" data-llp-delay="500" fill-opacity="0" style=""/><path class="cls-1" d="M912.61,307.25h-99L802.54,0H923.65Z" transform="translate(0.61)" data-llp-id="лого-2" data-llp-duration="500" data-llp-delay="1000" fill-opacity="0" style=""/><path class="cls-1" d="M1058.41,436.62h-99V51.52h181q63.81,0,100.68,33.56,38,33,38,85.27,0,37.42-19.81,66t-55,42.36l116.63,157.89H1206.95L1098,289.74h-39.61Zm0-301.48v73.72h76.47q20.35,0,32.18-9.63t11.83-26.68q0-17-11.83-27.23t-32.18-10.18Z" transform="translate(0.61)" data-llp-id="лого-3" data-llp-duration="500" data-llp-delay="1500" fill-opacity="0" style=""/><path class="cls-1" d="M1406.1,436.62H1301.57l161.74-387.3h95.18l161.74,387.3H1614.05l-32.46-81.42h-143Zm104-263.52L1469.91,276h80.32Z" transform="translate(0.61)" data-llp-id="лого-4" data-llp-duration="500" data-llp-delay="2000" fill-opacity="0" style=""/><circle class="cls-1" cx="863.7" cy="383.27" r="53.36" data-llp-id="лого-5" data-llp-duration="500" data-llp-delay="2500" fill-opacity="0" style=""/></svg> 
+	</div>
+
+	<div class="fixed">
+		<p><b>Akira Education </b>– международная ассоциация центров развития интеллекта</p>
+	</div>
+
 	<header class="header">
+		<div class="container header__container">
 
-		<a href="index.html" class="header__logo">
-			<img src="img/logo.svg" alt="logo" width="145" height="50">
-		</a>
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" width="230" height="78">
+			</a>
 
-		<button class="hamburger" type="button">
-			<span class="hamburger__box">
-				<span class="hamburger__item"></span>
-			</span>
-		</button>
+			<div class="header__block">
 
-		<nav class="nav">
-		</nav>
+				<div class="header__info">
 
-		<nav class="nav--installation">
-			<ul>
-				<li><a href=""><img src="img/header--item1.png" alt=""></a></li>
-				<li><a href=""><img src="img/header--item2.png" alt=""></a></li>
-				<li><a href=""><img src="img/header--item3.png" alt=""></a></li>
-				<li><a href=""><img src="img/header--item4.png" alt=""></a></li>
-			</ul>
-		</nav>
+					<div class="header__info_item">
+						<div><img src="img/header-mail.png" alt=""></div>
+						<a href="mailto:admin@akira.education">admin@akira.education</a><br>
+						<span>напишите нам</span>
+					</div>
+					<div class="header__info_item">
+						<div><img src="img/header-call.png" alt=""></div>
+						<a href="tel:84999384355">8 (499) 938-43-55</a><br>
+						<span>горячая линия</span>
+					</div>
+					<div class="">
+						<a href="#" class="btn btn--start">Начать</a>
+					</div>
 
-	</header>
+					<button class="hamburger" type="button">
+						<span class="hamburger__box">
+							<span class="hamburger__item"></span>
+						</span>
+					</button>
 
-	<main class="main">
+				</div>
 
-		<section class="section" id="app">
-			<div class="container">
+				<nav class="header__nav nav">
+
+					<ul>
+						<li><a href="#hero">ГЛАВНАЯ</a></li>
+						<li><a href="#about">О проекте</a></li>
+						<li><a href="#program">тренажеры</a></li>
+						<li><a href="#">тарифы</a></li>
+						<li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+						<li><a href="#footer">КОНТАКТЫ</a></li>
+					</ul>                                  
+
+					<div class="nav__info header__info_item">
+						<div><img src="img/header-mail.png" alt=""></div>
+						<a href="mailto:adress@gmail.com">adress@gmail.com</a><br>
+						<span>напишите нам</span>
+					</div>
+
+					<div class="nav__info header__info_item">
+						<div><img src="img/header-call.png" alt=""></div>
+						<a href="tel:84999384355">8 (499) 938-43-55</a><br>
+						<span>горячая линия</span>
+					</div>
+
+				</nav>
 
 			</div>
-		</section>
 
-	</main>
+		</div>
+	</header>
 
-	<footer class="footer">
+	<section class="hero" id="hero">
+
+		<img src="img/cube.png" alt="" class="parallax parallax--sped-six parallax--position-three">
+		<img src="img/cube.png" alt="" class="parallax parallax--sped-seven parallax--position-seven">
+
+		<div class="hero__bg">
+			<img src="img/hero1.png" alt="">
+			<img src="img/hero2.png" alt="">
+			<img src="img/hero3.png" alt="">
+		</div>
+
+		<div class="container">
+
+			<div class="hero__media">
+				<h1>ОНЛАЙН-ТРЕНАЖЁРЫ <br>И ОЛИМПИАДЫ<br><span>Akira Education</span></h1>
+				<p class="hero__sub-title">Инновации. Простота. Польза.</p>
+				<div class="hero__btn">
+					<img src="img/hero-arrow.png" alt="">
+					<a href="#" class="btn free_open">Начать</a>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<img src="img/cube.png" alt="" class="parallax parallax--sped-four parallax--position-four">
+		<img src="img/cube.png" alt="" class="parallax parallax--sped-seven parallax--position-seven">
+
 		<div class="container">
 			
+			<h2>О нас</h2>
+
+			<div class="about__list">
+				
+				<div class="about__list_item">
+					<h3>5000+</h3>
+					<p>довольных <br>учеников</p>
+				</div>
+				<div class="about__list_item">
+					<h3>800+</h3>
+					<p>выпускников - <br>тренеров</p>
+				</div>
+				<div class="about__list_item">
+					<h3>5+</h3>
+					<p>лет <br>практики</p>
+				</div>
+				<div class="about__list_item">
+					<h3>100+</h3>
+					<p>партнеров <br>по всему миру</p>
+				</div>
+				<div class="about__list_item">
+					<h3>15+</h3>
+					<p>стран <br>присутсвия</p>
+				</div>
+
+			</div>
+
+			<p class="about__text">
+				<b>
+					IA «AKIRA Education» - международная ассоциация центров развития интеллекта, имеющая многочисленую партнёрскую сеть, с присутствием в 15 странах мира. Мы способствуем запуску курсов дополнительного образования для детей, обеспечивая всем необходимым ваших детей- знаниями, материалами, программным обеспечением и многим другим. Наши основные принципы: инновации, простота и польза.
+				</b>
+			</p>
+
+			<div class="about__content">
+
+				<div class="about__content_item">
+					<h3>Инновации</h3>
+					<p>
+						Отслеживаем и внедряем последние новинки на рынке онлайн-образования, только лучшие практики, портал является одной из главных составляющих системы Akira Smart.
+					</p>
+				</div>
+
+				<div class="about__content_item">
+					<h3>Простота</h3>
+					<p>
+						Всё просто и понятно, разберётся даже ребёнок без предварительных инструкций, все алгоритмы и разделы портала созданы и размещены таким образом, что его использование приносит только удовольствие.
+					</p>
+				</div>
+
+				<div class="about__content_item">
+					<h3>Польза</h3>
+					<p>
+						Без сомнений результатом использования портала будут удовлетворены даже самые требовательные родители: рост успеваемости, целеустремлённость, призовые места на международных олимпиадах – и это далеко не полный список.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="vista" id="vista">
+		<div class="container">
+			
+			<h2>Возможности</h2>
+
+			<div class="vista__list">
+
+				<div class="vista__list_item">
+					<p><b>Тренажёры:</b> ментальная арифметика, скорочтение, развитие памяти и логики. Сильнейшие сертифицированные методисты СНГ принимали участие в разработке методик обучения</p>
+				</div>
+
+				<div class="vista__list_item">
+					<p><b>Личный кабинет</b><br> у каждого учителя и ученика, сквозная и понятная аналитика успеваемости, постановка домашнего задания на автомате</p>
+				</div>
+
+				<div class="vista__list_item">
+					<p><b>Участие</b> в престижных международных <b>онлайн- олимпиадах</b>, с помощью телефона или компьютера – решать вам</p>
+				</div>
+
+				<div class="vista__list_item">
+					<p>Удобная и простая <b>встроенная<br> система по учету учеников<br></b>, посещаемости и оплат</p>
+				</div>
+
+				<img src="img/vista-img.png" alt="" class="vista__list_img">
+			</div>
+
+		</div>
+	</section>
+
+	<section class="mobile" id="modile">
+		<img src="img/cube.png" alt="" class="parallax parallax--sped-four parallax--position-four">
+		<img src="img/cube.png" alt="" class="parallax parallax--sped-seven parallax--position-seven">
+
+		<div class="mobile__container container">
+			<div class="mobile__block">
+				<p class="mobile__title">
+					Скачайте <b>мобильное 
+					<br>приложение</b> уже сейчас
+					<br>абсолютно
+					<b>
+						<a href="https://play.google.com/store/apps/details?id=com.app_akira.layout" target="_blank">бесплатно!</a>
+					</b>
+				</p>
+				<img src="img/mobile-gadget.png" alt="" class="mobile__block_gadget">
+				<img src="img/qr.png" alt="" class="mobile__block_qr">
+			</div>
+		</div>
+
+	</section>
+	
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-lg-3 col-md-6">
+					<a href="/" class="footer__logo">
+						<img src="img/logo.png" alt="">
+					</a>
+					<p>Международная ассоциация <br>Акира Эдукейшн, <br>International Association <br>Akira Education</p>
+					<div class="footer__line"></div>
+					<a href="img/pk.jpg" target="_blank">Политика конфиденциальности</a>
+					<p class="footer__copy">All rights reserved, 2018</p>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<h3>меню</h3>
+					<nav>
+						<ul class="footer__list">
+							<li><a href="/">ГЛАВНАЯ</a></li>
+							<li class="click"><a href="#about">О НАС</a></li>
+							<li class="click"><a href="#program">РАЗВИВАЮЩИЕ ПРОГРАММЫ</a></li>
+							<li><a href="https://akira.education/" target="_blank">СОТРУДНИЧЕСТВО</a></li>
+							<li class="click"><a href="#footer">КОНТАКТЫ</a></li>
+						</ul>
+					</nav>
+				</div>   
+
+				<div class="col-lg-2 col-md-6">
+					<h3>контакты</h3>
+					<p>
+						г. Алматы, ул. Жандосова д. 58
+					</p>
+					<a href="tel:84999384355" class="footer__link">8 (499) 938-43-55</a>
+					<a href="mailto:admin@akira.education" class="footer__link">admin@akira.education</a>
+					<div class="footer__soc">
+						<a href="https://www.instagram.com/akira.education/?hl=r" target="_blank"><svg><use xlink:href="#instagram"></use></svg></a>
+						<a href="https://www.youtube.com/channel/UCd-SQIxY4c4vc7Gpi43fVjQ" target="_blank"><svg><use xlink:href="#youtube-play-button"></use></svg></a>
+						<a href="https://vk.com/akiramentalarithmetic" target="_blank"><svg><use xlink:href="#vk"></use></svg></a>
+						<a href="https://play.google.com/store/apps/details?id=com.app_akira.layout" target="_blank"><svg><use xlink:href="#google-play"></use></svg></a>
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-3 col-md-6">
+					<h3>Обратная связь</h3>
+					<div class="footer__call call">
+						<div class="call__absolute call__absolute--tel">
+							<svg><use xlink:href="#telephone"></use></svg>
+						</div>
+						<a href="tel:84999384355"><b>8 (499) 938-43-55</b></a>
+						<a href="#" class="free_open">заказать звонок</a>
+					</div>
+					<div class="footer__call call">
+						<div class="call__absolute">
+							<svg><use xlink:href="#mail"></use></svg>
+						</div>
+						<a href="mailto:admin@akira.education"><b>admin@akira.education</b></a>
+						<a href="#" class="free_open">Напишите нам</a>
+					</div>
+					<a href="#" class="btn btn--footer free_open">Записаться</a>
+				</div>
+
+			</div>
 		</div>
 	</footer>
 
+
 	<!-- modal -->
-		<div class="modal" id="order">
+		<div class="modal" id="free">
 			<form action="sendmail.php" class="form" method="post">
 
-				<button class="close order_close" type="button">
+				<button class="close free_close" type="button">
 					<span></span>
 					<span></span>
 				</button>
@@ -78,9 +327,9 @@
 					<input type="tel" name="phone" required placeholder="Телефон">
 				</div>
 				<div class="">
-					<button type="submit" class="btn" name="submit">Отправить</button>
+					<button type="submit" class="form__btn btn" name="submit">Отправить</button>
 				</div>
-				<p>Нажимая на кнопку, вы даете согласие <br>на обработку своих <a href="#" target="_blank">персональных данных</a></p>
+				<p>Нажимая на кнопку, вы даете согласие <br>на обработку своих <a href="img/pk.jpg" target="_blank">персональных данных</a></p>
 
 			</form>
 		</div>
