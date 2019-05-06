@@ -1,11 +1,50 @@
+@media only screen and (max-width : 1920px)
+
+	.hero
+		&::before
+			display: none
+
+		&__bg
+			img
+				left: -100px
+				right: auto
+				transform: translate(0, 0)
+
+
+@media only screen and (max-width : 1550px)
+
+	.hero
+		padding-top: 200px
+		padding-bottom: 100px
+
+		&__bg
+			img
+				height: 100%
+	
+	h1
+		span
+			font-size: 55px
+
 
 @media only screen and (max-width : 1200px)
+
+	h1
+		font-size: 44px
+
+		span
+			font-size: 44px
+
+	h2
+		&::before
+			font-size: 100px
 
 	.parallax
 		display: none
 
+
 	.fixed
 		padding: 5px 15px
+
 
 	.header
 		top: 32px
@@ -18,26 +57,58 @@
 				width: 100%
 				height: auto
 
+
 	.nav li
 		margin-right: 25px
 
-	h1
-		font-size: 44px
-
-		span
-			font-size: 44px
 
 	.hero
 		padding-top: 155px
 		padding-bottom: 100px
 
-		&__bg img
-			transform: translate(-33%,0)
-
 		&__media
 			background: rgba($dark, .8)
 			padding: 30px
 			border-radius: 30px
+	
+	.about
+		padding-top: 65px
+		padding-bottom: 60px
+
+	.vista
+		padding-bottom: 40px
+		background-size: cover
+
+		&__list_img
+			top: 0
+			width: 40%
+
+	.bonuse
+		padding: 40px 0
+
+		&__list
+			ul
+				padding: 15px
+				font-size: 14px
+
+			li
+				margin-bottom: 10px
+
+
+	.register
+		padding-top: 90px
+
+
+	.tariffs
+		&__img
+			z-index: -1
+
+		&__block
+			&_item
+				width: 40%
+
+			&_info
+				width: 40%
 
 	.mobile
 		h2
@@ -61,92 +132,24 @@
 				p, svg
 					margin-bottom: 20px
 
-	.about
-		padding-top: 65px
-		padding-bottom: 260px
-		background-size: contain
+	.reviews
+		padding: 40px 0
 
-	.why
-		&__list
-			margin-bottom: 50px
+		h2
+			margin-bottom: 40px
 
-		&__block
-			h3
-				font-size: 18px
-				line-height: 1.2
-
-		img
-			width: 100%
-			margin-bottom: 20px
-
-
-	.training h2
-		margin-bottom: 70px
-
-	.page
-		&--hero
-			&__img
-				width: 56%
-
-			&-calligraphic
-				&__img
-					top: 113px
-					left: -70px
-
-		&--content
-			&__item
-				padding-left: 35px
-
-				&--first
-					margin-top: 150px
-					margin-bottom: 40px
-
-				h3
-					font-size: 16px
-					line-height: 1.4
-
-		&--work
-			h2
-				margin-bottom: 50px
-
-			&__list
-				flex-wrap: wrap
-
-			&__item
-				width: 100%
-
-				&:nth-child(2)
-					margin-top: 10px
-
-				&:nth-child(3)
-					margin-top: 0
-
-				div
-					height: 70% !important
-					margin-top: 20px
-
-				p
-					width: 75%
-
-				img
-					display: none
-
-				br
-					display: none
-
-				&_media
-					display: block !important
-					margin: 0 auto
+		&__slide
+			padding: 40px 0
 
 
 @media only screen and (max-width : 992px)
-	
+
+	h1
+		margin-bottom: 40px
+
 	h2
 		margin-bottom: 30px !important
 		font-size: 26px
-
-		&::before
-			display: none
 
 	.header
 		padding: 10px 0
@@ -166,6 +169,7 @@
 				&:nth-child(1),
 				&:nth-child(2)
 					display: none
+
 
 	.nav
 		position: fixed
@@ -202,11 +206,23 @@
 			display: block !important
 			margin: 30px
 
+
 	.hamburger
 		display: block
 
-	h1
-		margin-bottom: 40px
+
+	.franchise
+		&__tab
+			&_img
+				width: 40%
+				left: 60%
+
+			ul
+				width: 58%
+
+		&__list_item a
+			border-radius: 15px
+
 
 	.hero
 		padding-top: 120px
@@ -215,20 +231,109 @@
 		&__sub-title
 			margin-bottom: 40px
 
-		&__bg img
-			transform: translate(-28%,0)
-
 		.btn
 			max-width: 320px
 			padding: 0 10px
+	
+	.about
+		padding: 40px 0
 
-	.mobile
+		h3
+			font-size: 44px
+
+		&__list_item p
+			font-size: 12px
+
+		&__content_item,
+		&__content_item:nth-child(2),
+		&__content_item:nth-child(3),
+			width: 100%
+			margin-bottom: 25px
+			top: 0
+			right: 0
+
+		&__content_item
+			&:last-child
+				margin-bottom: 0
+
+			h3
+				margin-bottom: 30px
+
+		&__text
+			margin-bottom: 40px
+
+	.vista
+		background-position: top right
+
+		p
+			font-size: 16px
+
+			b
+				font-size: 20px
+
+		&__list
+			&_img
+				top: 13%
+
+	.bonuse__list
+		justify-content: space-around
+
+		&_item
+			width: 45%
+
+			&:nth-child(1),
+			&:nth-child(2)
+				z-index: 1
+
+		ul
+			transform: translate(-50%,0)
+			top: 0
+
+	.franchise__list_item a
+		padding: 15px
+		font-size: 14px
+
+	.register__list
+		font-size: 14px
+
+		img
+			margin-bottom: 15px
+	
+	.reviews__slide
+		font-size: 16px
+		padding: 25px 0
 
 		&::before
-			height: 700px
+			font-size: 100px
+	
+	.tariffs
 
-		&:after
+		&::before
+			height: 365px
+
+		li
+			font-size: 16px
+
+		&__img
 			display: none
+
+		&__block
+			&_info,
+			&_item
+				width: 48%
+
+			&_info
+				padding: 30px
+
+				b
+					font-size: 60px
+
+				h3
+					font-size: 20px
+					margin-bottom: 10px
+
+	.mobile
+		padding-top: 80px
 
 		&__title
 			font-size: 22px
@@ -238,7 +343,7 @@
 				display: none
 
 		&__block
-			margin-bottom: 95px
+			margin-bottom: 50px
 
 			&_gadget
 				top: -45px
@@ -259,137 +364,24 @@
 			svg
 				max-width: 70px
 				max-height: 70px
-	
-	.about
-		padding-bottom: 165px
-		h3
-			font-size: 44px
 
-		&__list_item p
-			font-size: 12px
-
-	.why
-		padding: 40px 0
-
-		p
-			font-size: 14px
-
-		&__list
-			flex-wrap: wrap
-
-			&::before
-				display: none
-
-			&_item
-				position: relative
-				width: 48%
-				margin-bottom: 15px
-
-				&::before
-					content: ''
-					position: absolute
-					left: 0
-					top: 15px
-					height: 1px
-					width: 100%
-					border-bottom: 1px dashed $accent
-					z-index: -1
-
-				h3
-					margin-bottom: 10px
-
-		img
-			width: 50%
-			margin: 0 auto 15px
-
-		.col-md-6
-			img
-				display: block
-				width: auto
-				height: 290px
-
-		&__block
-			margin-bottom: 15px
-
-			h3
-				margin-bottom: 15px
-				font-size: 16px
-
-			&_number
-				font-size: 170px
-
-	.training
-		padding-bottom: 40px
-
-	//----------------hover-img---------------
-	@keyframes slide-hover
-		0%
-			transform: scale(1)
-		100%
-			transform: scale(1.1)
-
-	@keyframes slide-hover-back
-		0%
-			transform: scale(1.1)
-		100%
-			transform: scale(1)
 
 	.footer
+		.col-md-6
+			margin-bottom: 25px
+
 		&__line
 			margin: 10px 0
 
 		h3
-			margin-bottom: 25px
+			margin-bottom: 15px
 
-
-	.page
-		&--hero
-			padding-top: 150px
-			padding-bottom: 100px
-
-			&__sub-title
-				font-size: 22px
-
-			&__img
-				width: 56%
-
-			&-calligraphic
-				&__img
-					top: 20px
-					left: -70px
-
-				h1
-					br
-						display: none
-
-		&--work__item
-			font-size: 16px
-
-			p
-				width: 100%
-
-		&--content
-			padding: 70px 0
-
-			&__item
-				&--first
-					margin-top: 0
-
-				&--two
-					margin-bottom: 20px
-
-				img
-					display: block
-					width: 55%
-					margin: 0 auto
-
-				h3
-					margin-bottom: 10px
+		&__list
+			li
+				margin-bottom: 5px
 
 
 @media only screen and (max-width : 767px)
-	.page--hero-trainer__sub-title
-		font-size: 22px
 
 	h1
 		font-size: 34px
@@ -399,11 +391,15 @@
 	h2
 		font-size: 22px
 
+		&::before
+			display: none
+
 	.fixed
 		font-size: 12px
 
 	.header
 		top: 26px
+
 
 	.hero
 		&__media
@@ -416,9 +412,74 @@
 		&__btn img
 			width: 50px
 
+	.register
+		padding-top: 40px
+
+		&__list
+			flex-wrap: wrap
+			justify-content: space-around
+
+			&_item
+				width: 31%
+				margin-bottom: 15px
+
+	.reviews__slide_text
+		margin-bottom: 20px
+
+	.franchise__list
+		flex-wrap: wrap
+		border: none
+
+		&_item
+			width: 100%
+			border: 2px solid #fff
+			margin-bottom: 2px
+
+			a
+				&::before
+					display: none
+
+	.tariffs__block_info
+		span
+			font-size: 14px
+
+		b
+			font-size: 40px
+
+	.vista__list
+		p
+			width: 100%
+
+		&_img
+			display: none
+
+		&_item
+			width: 100%
+			margin-bottom: 25px
+
+			&:nth-child(2n)
+				text-align: left
+
+	.bonuse
+		padding: 20px 0
+
+		&__list
+			&_item
+				width: 100%
+				margin-bottom: 15px
+
+				&:nth-child(1)
+					z-index: 3
+
+				img
+					display: block
+					margin: 0 auto
+
+	.footer .col-md-6
+		margin-bottom: 10px
+
 	.mobile
-		&::before
-			height: 730px
+
 
 		&__title
 			font-size: 18px
@@ -439,7 +500,7 @@
 				margin-bottom: 15px
 	
 	.about
-		padding-bottom: 125px
+
 		&__list
 			justify-content: space-around
 			margin-bottom: 25px
@@ -482,96 +543,6 @@
 			a
 				display: block
 
-	.page
-		&--hero
-			padding-bottom: 40px
-
-			h1
-				margin-bottom: 35px
-
-			&__sub-title
-				font-size: 20px
-
-			&__img
-				width: 44%
-				top: 20px !important
-				left: -20px !important
-
-		&--content
-			padding: 70px 0 40px
-
-			&__item--first
-				margin-bottom: 25px
-
-			&__btn img
-				display: none
-
-	
-		&--work
-
-			&-speed
-				.page--work__item
-					&::before,
-					&::after
-						background: #d736c1
-
-			&__item
-				margin-bottom: 25px
-				padding: 15px
-				border-radius: 10px
-				border: 4px dashed #fff
-				z-index: 1
-				font-size: 14px
-
-				&::before
-					content: ''
-					position: absolute
-					right: 0
-					left: 0
-					top: 0
-					bottom: 0
-					background: #5568b4
-
-				&::after
-					content: ''
-					position: absolute
-					right: 30px
-					bottom: -15px
-					transform: rotate(45deg)
-					width: 30px
-					height: 30px
-					background: #5568b4
-					border: 4px dashed #fff
-					z-index: -1
-
-				&:nth-child(2)
-					margin-top: 0
-
-				&:last-child
-					margin-bottom: 0
-
-					&::after
-						display: none
-
-				div
-					position: relative
-					margin: 0 auto
-					width: 100%
-					height: auto !important
-					margin-top: 12px
-
-				b
-					font-size: 28px
-
-				&_media
-					display: none !important
-
-			&-calligraphic
-				.page--work__item
-					&::before,
-					&::after
-						background: #47cddd
-
 
 @media only screen and (max-width : 576px)
 	h1
@@ -594,25 +565,39 @@
 	.fixed
 		font-size: 10px
 
-	.page
-		&--hero
-			&__sub-title
-				font-size: 16px
+	.reviews__slide
+		font-size: 14px
 
-		&--work
-			padding: 40px 0
+		&::before
+			font-size: 80px
+
+	.vista
+		padding-top: 40px
+
+	.tariffs
+		padding-top: 20px
+
+		&::before
+			height: 310px
+
+		li
+			font-size: 14px
+
+		&__block_info
+			width: 100%
+			margin-bottom: 20px
 
 
 @media only screen and (max-width : 480px)
-	.page--hero-trainer__sub-title
-		font-size: 20px
-
 	h1
 		font-size: 24px
 		margin-bottom: 25px
 
 		span
 			font-size: 24px
+	
+	h2
+		font-size: 20px
 
 	.btn
 		font-size: 12px
@@ -625,6 +610,9 @@
 
 	.header
 		top: 0
+
+		.btn
+			padding: 0 20px
 
 		&__logo
 			width: 90px
@@ -647,8 +635,10 @@
 						width: 60%
 						height: 60%
 
+
 	.nav
 		top: 42px
+
 
 	.hero
 		padding-top: 70px
@@ -658,22 +648,30 @@
 			padding: 10px
 
 		&__bg
-			width: 600px
-			left: 0
-			top: 40%
-
 			img
-				width: 600px
-				left: 50%
-				transform: translate(-50%, 0)
-
+				left: -40px		
 		&__sub-title
 			margin-bottom: 25px
-	
-	h2
-		font-size: 20px
+
+
+	.about
+		h3
+			font-size: 30px
+
+		&__content_item h3::before
+			content: url(../img/about-content-item2.png)
+			font-size: 26px
+
+
+	.register__list_item
+		width: 48%
+
 
 	.mobile
+
+		&::before
+			height: 110px
+
 		&__block
 			margin-bottom: 25px
 	
@@ -703,51 +701,42 @@
 				&::before
 					display: none
 
+	
+	.franchise
+		padding: 40px 0
 
-	.about__list_item
-		width: 48%
+		&__tab
+			&_img
+				display: none
 
-	.why
-		img
-			width: 70%
+			ul
+				width: 100%
 
-		&__list_item
+		&__list
+			margin-bottom: 35px
+
+
+	.reviews__slide
+		padding-top: 0
+
+		&::before
+			display: none
+
+		&_text
 			width: 100%
 
-		.col-md-6 img
-			height: 250px
+		&_date
+			margin-right: 0 !important
+			font-size: 14px
 
-	.training
-		.slick-dotted.slick-slider
-			margin-bottom: 60px
 
-		.slick-dots
-			bottom: -40px
+	.vista p
+		font-size: 14px
 
-		&__slide
-			padding: 0 5px
+		b
+			font-size: 18px
+
 	
-	.about
-		padding-bottom: 100px
-
-	.page
-
-		&--hero
-			padding-top: 110px
-
-			&__img
-				top: -55px !important
-				left: 0 !important
-
-		&--content
-			padding-top: 40px
-
-			&__item
-				padding-left: 0
-
-				&::before
-					display: none
-
-
-
-
+	.footer__call
+		padding-left: 60px
+		width: 100%

@@ -61,6 +61,7 @@
 	transition: all .4s
 	z-index: 1001
 
+
 	&--calligraphic
 		background-color: rgba(#374da7, .73)
 		
@@ -76,7 +77,6 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-
 
 	&__block
 		display: flex
@@ -151,6 +151,9 @@
 		a
 			color: #fff
 
+	.btn
+		padding: 0 55px
+
 
 .nav
 	ul
@@ -212,7 +215,7 @@
 		color: #fff
 		text-align: right
 		font-weight: 500
-		margin-bottom: 75px
+		margin-bottom: 60px
 	
 	&__btn
 		display: flex
@@ -229,21 +232,18 @@
 
 .about
 	padding-bottom: 90px
+	background-image: url(../img/about-bg.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
 
 	h2
 		margin-bottom: 60px
 
 		&::before
 			content: 'о проекте'
-			position: absolute
 			left: 0
-			opacity: 0.14
-			color: #d2d2d2
-			font-size: 150px
-			font-weight: 800
-			line-height: 36px
-			text-decoration: line-through
-			text-transform: uppercase
+
 
 	&__list
 		display: flex
@@ -344,7 +344,7 @@
 		top: 0
 		right: 0
 		left: 0
-		height: 633px
+		height: 619px
 		width: 100%
 		background-image: linear-gradient(to left, #3741a2 0%, #9247c3 50%, #d134cd 100%)
 		z-index: -2
@@ -355,15 +355,7 @@
 
 		&::before
 			content: 'Возможности'
-			position: absolute
 			left: 0
-			opacity: 0.14
-			color: #d2d2d2
-			font-size: 150px
-			font-weight: 800
-			line-height: 36px
-			text-decoration: line-through
-			text-transform: uppercase
 	
 	p
 		width: 60%
@@ -400,8 +392,375 @@
 			z-index: -1
 
 
-.mobile
+.bonuse
 	padding-top: 70px
+	padding-bottom: 130px
+	background-image: url(../img/bonuse-bg.png)
+	background-position: top center
+	background-repeat: no-repeat
+	overflow: visible
+	z-index: 1
+
+	h2
+		margin-bottom: 45px
+		text-align: right
+
+		&::before
+			content: 'Бонусы'
+			right: 0
+
+
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		&_item
+			position: relative
+			width: 33%
+			transition: all .6s
+
+			&:hover
+				ul
+					opacity: 1
+					top: 98%
+
+		ul
+			position: absolute
+			top: 30%
+			left: 50%
+			transform: translate(-65%, 0)
+			width: 100%
+			padding: 30px
+			background: #fff
+			box-shadow: 0 0 7px rgba(53, 79, 156, 0.22)
+			border-radius: 10px
+			font-size: 16px
+			color: #353535
+			opacity: 0
+			transition: all .6s
+
+			&::before
+				content: ''
+				position: absolute
+				bottom: 100%
+				left: 50%
+				transform: translate(-50%, 0)
+				border-bottom: 20px solid #fff
+				border-left: 20px solid transparent
+				border-right: 20px solid transparent
+				border-top: 20px solid transparent
+
+
+		li
+			position: relative
+			margin-bottom: 25px
+
+			&:last-child
+				margin-bottom: 0
+
+		span
+			color: #624cb7
+			font-size: 36px
+			font-weight: 700
+
+		a
+			color: $accent
+
+
+.franchise
+	padding-top: 50px
+	padding-bottom: 65px
+	background-image: url(../img/franchise-bg.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	overflow: visible
+
+	h2
+		color: $accent
+		margin-bottom: 90px
+
+		&::before
+			content: 'тренажеры'
+			left: 0
+
+	&__list
+		display: flex
+		justify-content: space-between
+		border-radius: 20px
+		border: 2px solid $accent
+		margin-bottom: 50px
+
+		&_item
+			min-width: 20%
+			text-align: center
+			border-radius: 20px
+
+			a
+				position: relative
+				display: block
+				padding: 30px 20px
+				font-size: 18px
+				line-height: 1
+				font-weight: 700
+				color: $accent
+				transition: all .6s
+				border-radius: 20px
+
+				&:hover
+					background: rgba($accent, .4)
+
+					&::before
+						opacity: 1
+
+				&::before
+					content: ''
+					position: absolute
+					top: 100%
+					left: 50%
+					transform: translate(-50%, 0)
+					z-index: 1
+					opacity: 1
+					border-bottom: 20px solid transparent
+					border-left: 20px solid transparent
+					border-right: 20px solid transparent
+					border-top: 20px solid rgba($accent, .4)
+					opacity: 0
+					transition: all .6s
+
+
+			.active
+				background: $accent !important
+				color: #fff
+
+				&::before
+					opacity: 1
+					border-top: 20px solid rgba($accent, 1)
+
+	&__tab
+		color: #ffffff
+		position: relative
+
+		&_img
+			position: absolute
+			left: 45%
+			top: -35px
+
+		ul
+			width: 40%
+
+		li
+			position: relative
+			padding-left: 40px
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translate(0, -50%)
+				width: 40px
+				height: 40px
+				background-image: url(../img/franchise-check.png)
+				background-size: cover
+				background-position: center
+				background-repeat: no-repeat
+
+
+.register
+	padding-top: 220px
+	padding-bottom: 25px
+
+	h2
+		margin-bottom: 50px
+
+		&::before
+			content: 'Как зарегистрироваться'
+			left: 0
+
+	p
+		line-height: 1.2
+
+	&__list
+		display: flex
+		justify-content: space-between
+		font-size: 20px
+		font-weight: 500
+		color: #434faf
+		text-align: center
+
+		img
+			display: block
+			margin: 0 auto 40px
+
+		b
+			font-weight: 800
+			text-transform: uppercase
+
+		.btn
+			margin-top: 20px
+
+		&_item
+			width: 18%
+
+
+.tariffs
+	position: relative
+	z-index: 1
+	padding-top: 40px
+	padding-bottom: 10px
+
+	&::before
+		content: ''
+		position: absolute
+		bottom: 25px
+		right: 0
+		left: 0
+		height: 580px
+		background-color: #ebebeb
+		z-index: -1
+
+	h2
+		margin-bottom: 140px
+		color: $accent
+		text-align: right
+
+		&::before
+			content: 'Тарифы'
+			right: 0
+
+	ul
+		margin-bottom: 45px
+	
+	li
+		position: relative
+		font-size: 20px
+		margin-bottom: 5px
+		line-height: 1.1
+
+		&::before
+			content: '●'
+			color: $accent
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+
+	&__block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		&_item
+			width: 30%
+
+			&--left
+				li
+					padding-left: 20px
+
+					&::before
+						left: 0
+
+			&--right
+				text-align: right
+
+				li
+					padding-right: 20px
+
+					&::before
+						right: 0
+
+		&_info
+			position: relative
+			padding: 40px
+			background: #fff
+			border-radius: 25px
+			box-shadow: 0 0 18px rgba(18, 27, 53, 0.13)
+
+			&--left
+				width: 34%
+				z-index: 3
+
+				i
+					left: 60px
+
+
+			&--right
+				z-index: 1
+				width: 29%
+
+				i
+					right: 60px
+
+			h3
+				font-size: 24px
+				color: $dark
+				margin-bottom: 30px
+				line-height: 1.1
+				text-transform: uppercase
+				text-align: center
+
+			i
+				position: absolute
+				top: -13px
+				display: block
+				width: 27px
+				height: 27px
+				box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35)
+				background: $accent
+				border-radius: 50%
+
+				&::before
+					content: ''
+					position: absolute
+					left: 53%
+					top: 55%
+					width: 10px
+					height: 10px
+					border-top: 2px solid #fff
+					border-left: 2px solid #fff
+					transform: translate(-50%, -50%) rotate(45deg)
+
+			p
+				color: $accent
+
+			b
+				font-size: 72px
+				font-weight: 800
+				line-height: .8
+
+			span
+				text-transform: uppercase
+				font-size: 24px
+
+	&__img
+		position: absolute
+		bottom: 25px
+		left: 50%
+		transform: translate(-50%, 0)
+		z-index: 2
+		
+
+.mobile
+	position: relative
+	padding-top: 115px
+	background-image: url(../img/about-bg.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		left: 0
+		height: 171px
+		background-color: #414faf
 
 	h2
 		margin-bottom: 100px
@@ -447,7 +806,7 @@
 
 	&__block
 		width: 50%
-		margin-bottom: 180px
+		margin-bottom: 80px
 
 		&_gadget
 			position: absolute
@@ -474,6 +833,73 @@
 				position: absolute
 				right: -70px
 				bottom: 40px
+
+
+.reviews
+	padding-top: 80px
+	padding-bottom: 40px
+	background-image: url(../img/reviews-bg.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+
+	h2
+		margin-bottom: 90px
+		color: $accent
+
+		&::before
+			content: 'о нас говорят'
+			left: 0
+
+	&__slide
+		position: relative
+		color: #fff
+		font-size: 20px
+		padding-top: 70px
+		padding-bottom: 60px
+
+		&::before
+			content: '“'
+			position: absolute
+			left: 0
+			top: 0
+			color: $accent
+			font-size: 150px
+			line-height: 1
+			font-weight: 800
+			text-transform: uppercase
+
+		&_text
+			width: 78%
+			margin: 0 auto 40px
+
+		&_date
+			max-width: 180px
+			font-size: 16px
+			margin-right: 11% !important
+			margin-left: auto
+
+	
+	.slick-arrow
+		display: none !important
+
+	.slick-dots
+		li
+			button
+				width: 9px
+				height: 9px
+				background-color: #4cddee
+				margin: 0 auto
+				border-radius: 50%
+				transition: all .6s
+
+				&::before
+					display: none
+		
+		.slick-active
+			button
+				width: 16px !important
+				height: 16px !important
 
 
 .call
@@ -517,7 +943,7 @@
 .footer
 	padding-top: 35px
 	padding-bottom: 45px
-	background: #454fb0
+	background: #2b258f
 
 	p, a
 		display: inline-block

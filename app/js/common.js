@@ -1,5 +1,24 @@
 $(function() {
 
+//--------------------------slider-reviews-----------------------
+  $('.reviews__slider').slick({
+    dots: true
+  });
+  
+
+
+//---------------------------tabs-----------------------
+  $('.tabs__wrap').hide();
+  $('.tabs__wrap:first').show();
+  $('.tabs ul a:first').addClass('active');
+   $('.tabs ul a').click(function(event){
+    event.preventDefault();
+    $('.tabs ul a').removeClass('active');
+    $(this).addClass('active');
+    $('.tabs__wrap').hide();
+     var selectTab = $(this).attr('href');
+    $(selectTab).fadeIn();
+  });
 
 
 //-------------------------------анімація цифр---------------------------------------
