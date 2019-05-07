@@ -6,7 +6,7 @@
 
 		&__bg
 			img
-				left: -100px
+				left: 0
 				right: auto
 				transform: translate(0, 0)
 
@@ -20,6 +20,7 @@
 		&__bg
 			img
 				height: 100%
+				left: -100px
 	
 	h1
 		span
@@ -449,6 +450,13 @@
 	.vista__list
 		p
 			width: 100%
+			font-size: 14px
+
+			b
+				font-size: 16px
+
+			br
+				display: none
 
 		&_img
 			display: none
@@ -474,6 +482,7 @@
 				img
 					display: block
 					margin: 0 auto
+					max-width: 250px
 
 	.footer .col-md-6
 		margin-bottom: 10px
@@ -635,10 +644,8 @@
 						width: 60%
 						height: 60%
 
-
 	.nav
-		top: 42px
-
+		top: 50px
 
 	.hero
 		padding-top: 70px
@@ -737,6 +744,18 @@
 			font-size: 18px
 
 	
-	.footer__call
-		padding-left: 60px
-		width: 100%
+	.footer
+		overflow: hidden
+
+		&__call
+			padding-left: 60px
+			width: 100%
+			max-width: 300px
+
+
+
+
+
+
+
+

@@ -2,7 +2,9 @@ $(function() {
 
 //--------------------------slider-reviews-----------------------
   $('.reviews__slider').slick({
-    dots: true
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
   });
   
 
@@ -165,7 +167,7 @@ if($('*').is('#about')) {
   'use strict';
 
   var file     = 'img/symbols.html',
-      revision = 1.2;
+      revision = 1.1;
 
   if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
       return true;
