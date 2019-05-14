@@ -61,4 +61,64 @@
 		&:hover,
 		&:focus
 			color: #fff !important
+	
+	&--profile
+		background-color: transparent
+		height: 45px
+		line-height: 45px
+		border: 1px solid $accent
+		font-size: 18px
+		color: $accent
+		text-transform: none
+		padding-right: 20px !important
+		padding-left: 50px !important
+
+		&:hover,
+		&:focus
+			border: 1px solid $accent
+			background: $accent
+
+			&::before
+				border-right: 10px solid #fff
+
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 20px
+			transform: translate(0, -50%)
+			border-bottom: 7px solid transparent
+			border-left: 10px solid transparent
+			border-right: 10px solid $accent
+			border-top: 7px solid transparent
+			transition: all .6s
+	
+	&--nav
+		height: 45px
+		line-height: 45px
+		border-radius: 20px
+		border: 1px solid #ffffff
+		background: transparent
+		padding: 0 45px 0 10px
+		text-transform: none
+
+		&:hover
+			border: 1px solid #f43ddb
+
+		&:focus
+			background: $dark
+			border: 1px solid $dark
+
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			right: 13px
+			transform: translate(0, -50%)
+			border-bottom: 7px solid transparent
+			border-left: 10px solid #fff
+			border-right: 10px solid transparent
+			border-top: 7px solid transparent
+			transition: all .6s
+
 

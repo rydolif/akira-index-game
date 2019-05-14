@@ -10702,7 +10702,7 @@ $(function() {
   $('.reviews__slider').slick({
     dots: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
   });
   
 
@@ -10774,9 +10774,7 @@ if($('*').is('#about')) {
 
 //------------------------------гамбургер-----------------------------
   $('.hamburger').click(function() {
-    $(this).toggleClass('hamburger--active');
     $('nav').toggleClass('nav--active');
-    $('header').toggleClass('header--menu');
   });
 
 //-------------------------------попандер---------------------------------------
