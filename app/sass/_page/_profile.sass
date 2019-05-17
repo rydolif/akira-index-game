@@ -123,7 +123,8 @@
 
 	&--nav
 		display: flex
-		justify-content: space-between
+		justify-content: space-around
+		flex-wrap: wrap
 		text-align: center
 
 		h3
@@ -134,12 +135,13 @@
 			transition: all .6s
 
 		&__item
-			width: 48%
+			width: 32%
 			border-radius: 25px
 			border: 1px solid $accent
 			background-color: #fff
-			padding: 25px 45px
+			padding: 20px
 			transition: all .6s
+			margin-bottom: 20px
 
 			&:hover,
 			&:focus
