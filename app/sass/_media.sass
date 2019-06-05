@@ -37,6 +37,9 @@
 
 
 @media only screen and (max-width : 1200px)
+	.profile--info .btn
+		margin-bottom: 10px
+
 	.profile--add
 		&__form
 			width: 65%
@@ -515,6 +518,9 @@
 
 
 @media only screen and (max-width : 767px)
+	.profile--info__info
+		margin-bottom: 20px
+		
 	.profile--add
 		&__form,
 		&__info
@@ -540,7 +546,7 @@
 				font-size: 14px
 
 		&__table
-			margin-bottom: 30px
+			margin-bottom: 20px
 			text-align: left
 
 			tr
@@ -618,17 +624,7 @@
 			font-size: 12px
 			white-space: pre-wrap
 
-		td:nth-of-type(1):before
-			content: attr(data-text)
-		td:nth-of-type(2):before
-			content: attr(data-text)
-		td:nth-of-type(3):before
-			content: attr(data-text)
-		td:nth-of-type(4):before
-			content: attr(data-text)
-		td:nth-of-type(5):before
-			content: attr(data-text)
-		td:nth-of-type(6):before
+		td:before
 			content: attr(data-text)
 
 
@@ -885,12 +881,11 @@
 	.profile--group
 
 		h1
-			margin-bottom: 0
+			margin-bottom: 10px
 			text-align: left
 
 		&__header
 			margin-bottom: 10px
-			flex-wrap: nowrap
 			justify-content: flex-start
 
 		&__footer
