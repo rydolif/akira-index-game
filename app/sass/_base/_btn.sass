@@ -24,11 +24,11 @@
 		color: #fff
 
 	&:hover
-		background: #f43ddb
+		background-color: #f43ddb
 		box-shadow: 0 0 10px 5px rgba(#f43ddb, 0.5)
 
 	&:focus
-		background: $dark
+		background-color: $dark
 		box-shadow: 0 0 10px 5px rgba($dark, 0.5)
 
 	
@@ -48,7 +48,7 @@
 			background-color: $accent
 			color: #fff !important
 			box-shadow: 0 0 10px 5px rgba($accent, 0.5)
-	
+
 	&--start
 		color: #fff
 		border-radius: 20px
@@ -61,7 +61,8 @@
 		&:hover,
 		&:focus
 			color: #fff !important
-	
+
+
 	&--profile
 		background-color: transparent
 		height: 40px
@@ -92,7 +93,8 @@
 			border-right: 10px solid $accent
 			border-top: 7px solid transparent
 			transition: all .6s
-	
+
+
 	&--nav
 		height: 45px
 		line-height: 45px
@@ -123,3 +125,31 @@
 			transition: all .6s
 
 
+	&--ucheniki
+		background-image: url(../img/uchenik--btn.png)
+		background-position: center
+		background-repeat: no-repeat
+		border: 1px solid #1e53a6
+		color: #1e53a6
+
+		&:hover,
+		&:focus
+			background-image: url(../img/uchenik--btn-active.png) !important
+			background-position: center !important
+			background-repeat: no-repeat !important
+
+			&::before
+				content: attr(data-text)
+				position: absolute
+				top: 50%
+				left: 110%
+				transform: translate(0, -50%)
+				font-size: 16px
+				font-weight: 400
+				color: #1e53a6
+				line-height: 30px
+				height: 30px
+				box-shadow: 0 0 6px rgba(39, 58, 114, 0.15)
+				border-radius: 10px
+				background-color: #ffffff
+				padding: 0 10px

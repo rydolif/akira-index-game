@@ -4,7 +4,7 @@
 		position: relative
 
 	.page--main
-		padding-bottom: 20px
+		padding-bottom: 40px
 
 
 @media only screen and (max-width : 1920px)
@@ -198,7 +198,16 @@
 						font-size: 14px
 						border-radius: 0
 						border: 1px solid #fff
+		
+		&--uchenik
+			.btn
+				padding: 0 30px
 
+			td
+				font-size: 14px
+
+			b
+				font-size: 18px
 
 
 	h1
@@ -484,6 +493,25 @@
 
 @media only screen and (max-width : 767px)
 
+	.profile--uchenik
+		.profile--group__table
+			overflow: hidden
+
+			td:before
+				font-size: 12px
+
+			td:nth-of-type(1):before
+				content: attr(data-text)
+			td:nth-of-type(2):before
+				content: attr(data-text)
+			td:nth-of-type(3):before
+				content: attr(data-text)
+			td:nth-of-type(4):before
+				content: attr(data-text)
+			td:nth-of-type(5):before
+				content: attr(data-text)
+			td:nth-of-type(6):before
+				content: attr(data-text)
 
 	.profile--group
 		&__header
@@ -515,6 +543,19 @@
 					top: 50% !important
 					transform: translate(0, -50%) !important
 
+			td:nth-of-type(1):before
+				content: "Check"
+			td:nth-of-type(2):before
+				content: "№"
+			td:nth-of-type(3):before
+				content: "Название"
+			td:nth-of-type(4):before
+				content: "Расписание"
+			td:nth-of-type(5):before
+				content: "Домашнее задание"
+			td:nth-of-type(6):before
+				content: "Тема"
+
 		table, thead, tbody, th, td, tr
 			display: block
 		
@@ -541,18 +582,6 @@
 			padding-right: 10px
 			white-space: nowrap
 
-		td:nth-of-type(1):before
-			content: "Check"
-		td:nth-of-type(2):before
-			content: "№"
-		td:nth-of-type(3):before
-			content: "Название"
-		td:nth-of-type(4):before
-			content: "Расписание"
-		td:nth-of-type(5):before
-			content: "Домашнее задание"
-		td:nth-of-type(6):before
-			content: "Тема"
 
 		&__footer
 			img
