@@ -267,6 +267,12 @@
 		padding: 30px 40px
 		min-height: 50vh
 		margin-top: 20px
+
+		.title
+			font-weight: 400
+
+			b
+				font-weight: 900
 		
 		.btn
 			font-weight: 700
@@ -536,8 +542,29 @@
 			p
 				color: #b2b2b2
 
+			&_stat
+				position: relative
+				padding-left: 45px
 
+				span
+					display: inline-block
+					width: 49%
 
+				img
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translate(0, -50%)
+
+				.blue
+					color: #4cddee
+
+				.date
+					color: #252525
+					font-size: 16px
+
+				.green
+					color: #00d512
 
 		&__form
 			width: 70%
@@ -547,7 +574,7 @@
 
 			input
 				box-shadow: none
-				width: 70%
+				width: 75%
 				border: 1px solid #d1d1d1
 				color: #252525
 
@@ -556,6 +583,22 @@
 				justify-content: space-between
 				align-items: center
 				margin-bottom: 15px
+
+				div
+					display: flex
+					justify-content: space-between
+					width: 75%
+
+					input
+						width: 50%
+
+				.btn
+					border: 1px solid #1e53a6
+					color: #1e53a6
+
+					&:hover,
+					&:focus
+						background-color: #1e53a6
 
 			&_btn
 				display: flex
@@ -568,9 +611,14 @@
 	
 	&--info
 
+
 		.btn
 			color: #1e53a6
 			border: 1px solid #1e53a6
+
+			&:hover,
+			&:focus
+				background-color: #1e53a6
 
 		th
 			border-collapse: separate
