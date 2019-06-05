@@ -302,6 +302,7 @@
 
 			img
 				margin-right: 15px
+				max-width: 35px
 
 		&__table
 			width: 100%
@@ -433,7 +434,6 @@
 			margin-right: 0
 
 
-
 	&--dostigenia__btn
 		display: flex
 		justify-content: flex-start
@@ -505,4 +505,63 @@
 			font-size: 24px
 
 	
+	&--add
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		&__info
+			width: 25%
+
+			&_avatar
+				position: relative
+				width: 150px
+				height: 150px
+				margin: 0 auto 30px
+
+				img
+					width: 100%
+					height: 100%
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+
+			.btn, p
+				margin-bottom: 15px
+
+			.btn
+				width: 100%
+
+			p
+				color: #b2b2b2
+
+
+
+
+		&__form
+			width: 70%
+
+			label
+				color: #c5c5c5
+
+			input
+				box-shadow: none
+				width: 70%
+				border: 1px solid #d1d1d1
+				color: #252525
+
+			&_input
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 15px
+
+			&_btn
+				display: flex
+				justify-content: flex-end
+				margin: 40px 0
+
+			.btn
+				margin-right: 0
 
