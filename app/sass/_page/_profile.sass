@@ -173,6 +173,93 @@
 				opacity: 1
 
 
+	&--cabinet
+		margin-top: 20px
+
+		&__list
+			display: flex
+			justify-content: space-between
+
+			&_item
+				width: 24%
+
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					height: 100%
+					border-radius: 10px 10px 0 0
+					background-color: #e1e1e1
+					padding: 10px
+					font-size: 18px
+					line-height: 1.1
+					color: #fff
+					font-weight: 800
+					text-align: center
+
+				.active
+					box-shadow: 0 0 18px rgba(39, 58, 114, 0.15)
+					background: $accent
+		
+		&__tab
+			min-height: 60vh
+			padding: 20px
+			background: #fff
+			display: flex
+			justify-content: space-around
+			align-items: center
+			flex-wrap: wrap
+			box-shadow: 0 0 18px rgba(39, 58, 114, 0.15)
+			border-radius: 0 0 20px 20px
+
+			&_item
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 270px
+				height: 270px
+				padding: 35px
+				border-radius: 25px
+				border: 1px solid #4cddee
+				background-color: #ffffff
+				font-size: 18px
+				font-weight: 700
+				line-height: 30px
+				text-align: center
+				color: $accent
+				margin-bottom: 15px
+
+				&:hover,
+				&:focus
+					color: #fff
+					background: $accent
+
+					.profile--cabinet__tab_item--active
+						display: block
+
+					.profile--cabinet__tab_item--off
+						display: none
+
+
+			&_img
+				position: relative
+				width: 35px
+				height: 35px
+				margin-right: 15px
+
+				&--active
+					display: none
+
+				&--off
+					display: block
+
+				img
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%)
+
+
 	&--group
 		box-shadow: 0 0 18px rgba(39, 58, 114, 0.15)
 		border-radius: 20px
@@ -202,6 +289,7 @@
 			align-items: center
 			margin-bottom: 25px
 			flex-wrap: wrap
+			width: 100%
 
 			h1
 				color: #1e53a6
@@ -330,93 +418,6 @@
 					background: #2e3192
 	
 
-	&--cabinet
-		margin-top: 20px
-
-		&__list
-			display: flex
-			justify-content: space-between
-
-			&_item
-				width: 24%
-
-				a
-					display: flex
-					justify-content: center
-					align-items: center
-					height: 100%
-					border-radius: 10px 10px 0 0
-					background-color: #e1e1e1
-					padding: 10px
-					font-size: 18px
-					line-height: 1.1
-					color: #fff
-					font-weight: 800
-					text-align: center
-
-				.active
-					box-shadow: 0 0 18px rgba(39, 58, 114, 0.15)
-					background: $accent
-		
-		&__tab
-			min-height: 60vh
-			padding: 20px
-			background: #fff
-			display: flex
-			justify-content: space-around
-			align-items: center
-			flex-wrap: wrap
-			box-shadow: 0 0 18px rgba(39, 58, 114, 0.15)
-			border-radius: 0 0 20px 20px
-
-			&_item
-				display: flex
-				align-items: center
-				justify-content: center
-				width: 270px
-				height: 270px
-				padding: 35px
-				border-radius: 25px
-				border: 1px solid #4cddee
-				background-color: #ffffff
-				font-size: 18px
-				font-weight: 700
-				line-height: 30px
-				text-align: center
-				color: $accent
-				margin-bottom: 15px
-
-				&:hover,
-				&:focus
-					color: #fff
-					background: $accent
-
-					.profile--cabinet__tab_item--active
-						display: block
-
-					.profile--cabinet__tab_item--off
-						display: none
-
-
-			&_img
-				position: relative
-				width: 35px
-				height: 35px
-				margin-right: 15px
-
-				&--active
-					display: none
-
-				&--off
-					display: block
-
-				img
-					position: absolute
-					left: 50%
-					top: 50%
-					transform: translate(-50%, -50%)
-
-
 	&--homework
 		text-align: center
 
@@ -432,6 +433,16 @@
 			margin-right: 0
 
 
+
+	&--dostigenia__btn
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+		width: 100%
+
+		.btn
+			margin-right: 20px
+			margin-bottom: 10px
 
 
 
