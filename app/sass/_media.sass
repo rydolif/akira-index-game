@@ -43,8 +43,16 @@
 	.profile--add
 		&__form
 			width: 65%
+
 			input
 				width: 77%
+
+			&_input
+				div
+					width: 77%
+
+				.btn
+					padding: 0 10px
 
 		&__info
 			width: 30%
@@ -178,6 +186,8 @@
 
 
 @media only screen and (max-width : 992px)
+
+
 	.profile--add
 		&__info
 			width: 35%
@@ -189,6 +199,15 @@
 				input
 					width: 70%
 
+				div
+					width: 70%
+					flex-wrap: wrap
+
+					input, .btn
+						width: 100%
+
+					input
+						margin-bottom: 10px
 
 
 	.profile
@@ -806,7 +825,7 @@
 @media only screen and (max-width : 576px)
 	.profile--group__header
 		img
-			width: 15px
+			width: 20px
 
 		h1
 			margin-right: 10px
@@ -877,7 +896,10 @@
 
 
 @media only screen and (max-width : 480px)
-	
+	.profile--add__form label
+		width: 30%
+
+
 	.profile--group
 
 		h1
@@ -1141,6 +1163,8 @@
 	.footer__copy
 		margin-bottom: 0
 
-
+	.profile--group__footer .btn
+		margin-right: 0
+		margin-bottom: 10px
 
 
