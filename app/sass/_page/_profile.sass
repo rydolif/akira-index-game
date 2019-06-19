@@ -347,12 +347,13 @@
 				padding: 17px
 				border: 20px
 
-				&:first-child
-					border-top-left-radius: 20px
-					border-bottom-left-radius: 20px
-				&:last-child
-					border-top-right-radius: 20px
-					border-bottom-right-radius: 20px
+				// &:first-child
+				// 	border-top-left-radius: 20px
+				// 	border-bottom-left-radius: 20px
+					
+				// &:last-child
+				// 	border-top-right-radius: 20px
+				// 	border-bottom-right-radius: 20px
 
 
 			.btn
@@ -627,7 +628,8 @@
 				background-color: #1e53a6
 
 		th
-			border-collapse: separate
+			border: 1px solid #f3f3f3
+		
 
 		td
 			font-size: 16px
@@ -645,25 +647,30 @@
 			border-radius: 10px
 
 			p
-				padding: 5px
+				padding: 7px
 				font-size: 16px
+
+				label
+					color: #515151
 
 				&:nth-child(even)
 					background: #f6f6f6
 
-			b
-				display: inline-block
-				width: 15px
-				height: 15px
-				border-radius: 50%
-				margin-right: 10px
+		// 	b
+		// 		display: inline-block
+		// 		width: 15px
+		// 		height: 15px
+		// 		border-radius: 50%
+		// 		margin-right: 10px
 
 		.green
 			background-color: #c4df9b
+			border: 1px solid #c4df9b
 			color: #fff
 
 		.red
 			background-color: #f69d67
+			border: 1px solid #f69d67
 			color: #fff
 
 		.white
@@ -673,6 +680,7 @@
 
 		.blue
 			background-color: #4cddee
+			border: 1px solid #4cddee
 			color: #fff
 		
 		&__info
@@ -680,7 +688,9 @@
 			justify-content: flex-end
 
 	
-th
+th, td
+	cursor: pointer
+
 	&:hover,
 	&:focus
 		.profile--info__check
@@ -692,5 +702,45 @@ th
 		background: #fff
 		text-align: left
 		color: $text
+
+
+		label
+			position: relative
+			top: 0
+			padding-left: 30px
+
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				border-radius: 50%
+
+			&::before
+				width: 15px
+				height: 15px
+
+			&::after
+				display: none
+
+		input[type="radio"]
+			display: none
+
+		input[type="radio"]:checked + .cirle--green::before
+			background-color: #c4df9b
+
+		input[type="radio"]:checked + .cirle--red::before
+			background-color: #f69d67
+
+
+		.cirle--green
+			&::before
+				color: #fff
+				border: 1px solid #c4df9b
+
+		.cirle--red
+			&::before
+				color: #fff
+				border: 1px solid #f69d67
+
 
 
