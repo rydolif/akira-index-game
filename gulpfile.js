@@ -60,7 +60,7 @@ gulp.task('minjs', function() {
 		'app/libs/fancybox/jquery.fancybox.js', 		//----картінка прикліку
 		'app/libs/jquery.spincrement.min.js', 		//----цифри анімованні
 		// 'app/libs/isotope.pkgd.min.js', 				//----сетка елементов + фильтр
-		'app/libs/lazy-line-painter/lazy-line-painter-1.9.6.min.js',
+		'app/libs/lazy-line-painter-1.9.6.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(plumber())
@@ -83,7 +83,7 @@ gulp.task('js', function() {
 		'app/libs/fancybox/jquery.fancybox.js', 		//----картінка прикліку
 		'app/libs/jquery.spincrement.min.js', 		//----цифри анімованні
 		// 'app/libs/isotope.pkgd.min.js', 				//----сетка елементов + фильтр
-		'app/libs/lazy-line-painter/lazy-line-painter-1.9.6.min.js',
+		'app/libs/lazy-line-painter-1.9.6.min.js',
 		'app/js/common.js', // Always at the end
 	])
 	.pipe(plumber())
