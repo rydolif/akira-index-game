@@ -124,6 +124,11 @@
 			border-top: 7px solid transparent
 			transition: all .6s
 
+	&--radio
+		height: 40px
+		line-height: 40px
+		font-size: 16px
+		width: 100% !important
 
 	&--ucheniki
 		background-image: url(../img/uchenik--btn.png)
@@ -149,17 +154,55 @@
 				color: #1e53a6
 				line-height: 30px
 				height: 30px
-				box-shadow: 0 0 6px rgba(39, 58, 114, 0.15)
+				box-shadow: 0 0 6px rgba(39, 58, 114, 0.2)
+				border-radius: 10px
+				background-color: #ffffff
+				padding: 0 10px
+				z-index: 1
+
+	&--delete
+		position: relative
+		border: 1px solid #1e53a6
+		color: #1e53a6
+
+		span
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%) rotate(-45deg)
+				background: #1e53a6
+				transition: all .6s
+
+			&::before
+				width: 2px
+				height: 25px
+
+			&::after
+				width: 25px
+				height: 2px
+
+		&:hover,
+		&:focus
+			&::before
+				content: attr(data-text)
+				position: absolute
+				top: 50%
+				left: 110%
+				transform: translate(0, -50%)
+				font-size: 16px
+				font-weight: 400
+				color: #1e53a6
+				line-height: 30px
+				height: 30px
+				box-shadow: 0 0 6px rgba(39, 58, 114, 0.2)
 				border-radius: 10px
 				background-color: #ffffff
 				padding: 0 10px
 
-
-	&--radio
-		height: 40px
-		line-height: 40px
-		font-size: 16px
-		width: 100% !important
-
-
-
+			span
+				&::before,
+				&::after
+					background: #fff

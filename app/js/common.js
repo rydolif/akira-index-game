@@ -1,6 +1,5 @@
 $(function() {
 
-
 //-------------------------таблиця форма---------------------------------------
   $('#check').click(function(){
       if ($(this).is(':checked')){
@@ -9,7 +8,6 @@ $(function() {
           $('body input:checkbox').prop('checked', false);
       }
   });
-
 
 //--------------------------slider-reviews-----------------------
   $('.reviews__slider').slick({

@@ -10700,7 +10700,6 @@ S:{pattern:/[a-zA-Z]/}}};a.jMaskGlobals=a.jMaskGlobals||{};h=a.jMaskGlobals=a.ex
 //# sourceMappingURL=lazy-line-painter-1.9.6.min.js.map
 $(function() {
 
-
 //-------------------------таблиця форма---------------------------------------
   $('#check').click(function(){
       if ($(this).is(':checked')){
@@ -10709,7 +10708,6 @@ $(function() {
           $('body input:checkbox').prop('checked', false);
       }
   });
-
 
 //--------------------------slider-reviews-----------------------
   $('.reviews__slider').slick({
