@@ -561,6 +561,14 @@
 			margin-bottom: 30px
 
 	.profile--group
+
+		&__form
+			&_btn
+				justify-content: center
+
+				.btn
+					margin-right: 10px
+					margin-bottom: 10px
 		&__header
 			margin-bottom: 30px
 
@@ -587,21 +595,23 @@
 
 			td
 				&::before
+					content: attr(data-text)
 					top: 50% !important
 					transform: translate(0, -50%) !important
 
-			td:nth-of-type(1):before
-				content: "Check"
-			td:nth-of-type(2):before
-				content: "№"
-			td:nth-of-type(3):before
-				content: "Название"
-			td:nth-of-type(4):before
-				content: "Расписание"
-			td:nth-of-type(5):before
-				content: "Домашнее задание"
-			td:nth-of-type(6):before
-				content: "Тема"
+			// td:nth-of-type(1):before
+			// 	content: "Check"
+			// td:nth-of-type(2):before
+			// 	content: "№"
+			// td:nth-of-type(3):before
+			// 	content: "Название"
+			// td:nth-of-type(4):before
+			// 	content: "Расписание"
+			// td:nth-of-type(5):before
+			// 	content: "Домашнее задание"
+			// td:nth-of-type(6):before
+			// 	content: "Тема"			
+
 
 		table, thead, tbody, th, td, tr
 			display: block
@@ -942,7 +952,6 @@
 			p
 				margin-bottom: 10px
 				font-size: 14px
-
 
 	h1
 		font-size: 24px
