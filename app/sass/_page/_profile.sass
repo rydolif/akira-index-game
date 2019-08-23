@@ -95,10 +95,6 @@
 
 
 	&--footer
-		// position: fixed
-		// bottom: 0
-		// right: 0
-		// left: 0
 		background-color: #9247c3
 		display: flex
 		justify-content: space-between
@@ -585,6 +581,7 @@
 						margin-right: 0
 						width: 220px
 
+
 	&--homework
 		display: flex
 		flex-direction: column
@@ -847,7 +844,68 @@
 			display: flex
 			justify-content: flex-end
 
-	
+	&--data
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 40px 0
+
+		h3
+			width: 100%
+			margin-bottom: 25px
+
+			time
+				color: $accent
+
+		&__item
+			width: 32%
+			background-color: #ededed
+			padding: 15px
+			border-radius: 15px
+
+			&_line
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 20px
+				font-size: 16px
+
+				p
+					width: 48%
+
+			&_box
+				span
+					display: block
+					background-color: $accent
+					border-radius: 5px
+					color: #fff
+					width: 70px
+					text-align: center
+					padding: 5px
+
+			&_block
+				text-align: center
+				color: $accent
+				font-weight: 600
+
+				span
+					display: block
+					width: 100%
+					margin-bottom: 5px
+					border-radius: 5px
+					padding: 5px
+					border: 1px solid $accent
+					font-weight: 400
+
+			b
+				font-size: 20px
+				text-transform: uppercase
+
+			.lite
+				color: #c6c6c6
+
+
+
 th, td
 	cursor: pointer
 
