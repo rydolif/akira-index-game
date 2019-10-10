@@ -199,6 +199,11 @@
 
 
 @media only screen and (max-width : 992px)
+	
+	.grid
+		td, th
+			padding: 4px
+			font-size: 12px
 
 	.btn
 		min-width: 45px
@@ -566,6 +571,31 @@
 
 
 @media only screen and (max-width : 767px)
+	.grid
+
+		&__content
+			font-size: 14px
+
+		td
+			padding-left: 65% !important
+			&::before
+				content: attr(data-text)
+				top: 50% !important
+				transform: translate(0, -50%) !important
+
+		th
+			display: none !important
+
+
+		tr
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3)
+				display: none
+
+			&:nth-child(odd)
+				background-color: #fff
+
 	.profile
 		&--nav
 			&__item
