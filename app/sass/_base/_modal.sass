@@ -29,7 +29,70 @@
 
 			.btn
 				width: auto
+	&--four
+		max-width: 830px
+		padding: 55px 60px
 
+		&__line
+			display: flex
+			flex-wrap: wrap
+
+			div
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				align-items: center
+				width: 83%
+				color: #a6a6a6
+				font-size: 16px
+				margin-top: 8px
+
+			li
+				margin-bottom: 10px
+
+				&:last-child
+					margin-bottom: 0
+
+			a
+				margin-left: 30px
+
+				img
+					transition: all .6s
+
+				&:hover,
+				&:focus
+					img
+						transform: scale(.8)
+
+		input, textarea
+			font-size: 16px
+			width: 80%
+
+			&::placeholder
+				font-size: 16px
+
+		input
+			height: 35px
+			line-height: 35px
+
+			&::placeholder
+				line-height: 35px
+
+		textarea
+			resize: none
+
+		label
+			font-size: 14px
+			color: #c5c5c5
+			width: 15%
+			margin-top: 7px
+
+		&__btn
+			display: flex
+			justify-content: flex-end
+
+			.btn
+				width: auto !important
 
 
 .close
